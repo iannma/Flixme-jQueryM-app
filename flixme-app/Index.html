@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>App- version Lunes 09 octubre</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/video.css">
+	<link rel="stylesheet" type="text/css" href="css/plugin.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/customized.css">
+	<script src="js/jquery-2.2.4.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    	<!-- The plugin source -->
+	<script src="js/plugin.js"></script>
+	<!-- Demo page source -->
+	<script src="js/demo.js"></script>
+	</head>
+
+	<body>
+
+	<!-- first page-->
+	<div data-role="page" id="page1" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe" >
+
+		<!--header-->
+		<div data-role="header">
+			<a href="#nav-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">One</a><h1 class="ui-title"><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+			<a href="#search" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search ui-btn-icon-notext">search</a>
+		</div><!-- /header -->
+
+		<!--content-->
+		<div data-role="main" class="ui-content">
+
+		<!-- Images -->
+		<div class="">
+				<p>Daredevil</p>
+    			<a href="#page2" data-transition="slideup"><img src="img/marvel-daredevil-990-600.png" width="100%" height="100%"></a>
+				<p>Orange is the new black</p>
+    			<a href="#orange" data-transition="slideup"><img src="img/orangeis.png" width="100%" height="100%"></a>
+		</div>
+		
+		<p>My list</p>
+		<div class="ui-grid-b">
+			<a href="#american" class="ui-shadow ui-btn ui-corner-all ui-block-a"><img src="img/american-vandal-optimised.png" width="100%" height=""></a>
+			<a href="#it" class="ui-shadow ui-btn ui-corner-all ui-block-c" width="100%"><img src="img/IT-crowd-optimised.png" width="100%" height=""></a>
+			<a href="#breakingbad" class="ui-shadow ui-btn ui-corner-all ui-block-b"><img src="img/BreakingBad-optimised.png" width="100%"></a>
+		</div>
+
+
+	</div><!-- /CONTENT -->
+
+	<!--Panels-->
+    <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#top5">My top 5</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div><!-- /panel-1 -->
+
+	<!--panel-2-->
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="c" id="search">
+		<ul data-role="listview" data-filter="true">
+                <li>
+                    <h2>American Vandal</h2>
+                    <p><a href="#american">Read more</a></p>
+                <li>
+                    <h2>Breaking Bad</h2>
+                    <p><a href="#breakingbad">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Daredevil</h2>
+                    <p><a href="#page2">Read more</a></p>
+                </li>
+                <li>
+                    <h2>IT Crowd</h2>
+                    <p><a href="#it">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Orange is the new black</h2>
+                    <p><a href="#orange">Read more</a></p>
+                </li>
+            </ul>
+		
+    </div> <!--/panel-2 -->
+
+	</div><!-- PAGE 1-->
+
+	<!--PAGE 2-->
+	<div data-role="page" id="page2" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe">
+	<!--header-->
+		<div data-role="header">
+			<a href="#nav-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">One</a>
+			<h1><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+			<a href="#search" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search ui-btn-icon-notext">search</a>
+		</div><!-- /header-->
+
+		<!--content-->
+		<div data-role="main" class="ui-content" data-theme="b">
+		<!--Video-->
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Gzy_e4HSUQ8" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<div class="ui-bar ui-bar-c" style="height:30px"><p class="desc">2015</p></div>
+			</div>
+			<div class="ui-block-b">
+				<div class="ui-bar ui-bar-c" style="height:30px">
+					<span class="imdbRatingPlugin" data-user="ur66098371" data-title="tt3322312" data-style="p1"><a href="http://www.imdb.com/title/tt3322312/?ref_=plg_rt_1" target="_blank"><img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" Daredevil
+				(2015) on IMDb" />
+				</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+				</div>
+			</div>
+		</div><!-- /grid-a -->
+
+		<div data-role="controlgroup" data-theme="a">
+		<p>Blinded as a young boy, Matt Murdock fights injustice by day as a lawyer and by night as the Super Hero Daredevil in Hell's Kitchen, New York City.</p>
+		<h6>Starring: Charlie Cox, Deborah Ann Woll, Elden Henson</h6>
+		</div>
+
+		<!--share icons-->
+			<span class="socialShare"></span>
+		
+		</div><!-- /CONTENT -->
+
+	  <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#top5">My top 5</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div><!-- /panel-1 -->
+
+	<!--panel-2-->
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="c" id="search">
+		<ul data-role="listview" data-filter="true">
+                <li>
+                    <h2>American Vandal</h2>
+                    <p><a href="#american">Read more</a></p>
+                <li>
+                    <h2>Breaking Bad</h2>
+                    <p><a href="#breakingbad">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Daredevil</h2>
+                    <p><a href="#page2">Read more</a></p>
+                </li>
+                <li>
+                    <h2>IT Crowd</h2>
+                    <p><a href="#it">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Orange is the new black</h2>
+                    <p><a href="#orange">Read more</a></p>
+                </li>
+            </ul>
+		
+    </div> <!--/panel-2 -->
+
+	</div> <!--/PAGE 2-->
+
+	<!-- AMERICAN VANDAL PAGE -->
+	<div data-role="page" id="american" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe">
+			<!--header-->
+		<div data-role="header">
+			<a href="#nav-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">One</a>
+			<h1><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+			<a href="#search" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search ui-btn-icon-notext">search</a>
+		</div><!-- /header-->
+
+		<!--content-->
+		<div data-role="main" class="ui-content" data-theme="b">
+		<!--Video-->
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/m3tkFOtM6go" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<div class="ui-bar ui-bar-c" style="height:30px"><p class="desc">2017</p></div>
+			</div>
+			<div class="ui-block-b">
+				<div class="ui-bar ui-bar-c" style="height:30px">
+					<span class="imdbRatingPlugin" data-user="ur66098371" data-title="tt6877772" data-style="p1"><a href="http://www.imdb.com/title/tt6877772/?ref_=plg_rt_1"><img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" American Vandal(2017) on IMDb" />
+					</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+				</div>
+			</div>
+		</div><!-- /grid-a -->
+
+		<div data-role="controlgroup" data-theme="a">
+		<p>A true-crime satire that explores the aftermath of a costly high school prank that left twenty-seven faculty cars vandalized with phallic images.</p>
+		<h6>Starring:  Tyler Alvarez, Griffin Gluck, Jimmy Tatro </h6>
+		</div>
+
+		<!--share icons-->
+			<span class="socialShare"></span>
+		
+		</div><!-- /CONTENT -->
+
+	  <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#top5">My top 5</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div><!-- /panel-1 -->
+
+	<!--panel-2-->
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="c" id="search">
+		<ul data-role="listview" data-filter="true">
+                <li>
+                    <h2>American Vandal</h2>
+                    <p><a href="#american">Read more</a></p>
+                <li>
+                    <h2>Breaking Bad</h2>
+                    <p><a href="#breakingbad">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Daredevil</h2>
+                    <p><a href="#page2">Read more</a></p>
+                </li>
+                <li>
+                    <h2>IT Crowd</h2>
+                    <p><a href="#it">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Orange is the new black</h2>
+                    <p><a href="#orange">Read more</a></p>
+                </li>
+            </ul>
+		
+    	</div> <!--/panel-->
+	</div> <!--/AMERICAN PAGE -->
+
+	<!-- BREAKING BAD PAGE -->
+	<div data-role="page" id="breakingbad" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe">
+			<!--header-->
+		<div data-role="header">
+			<a href="#nav-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">One</a>
+			<h1><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+			<a href="#search" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search ui-btn-icon-notext">search</a>
+		</div><!-- /header-->
+
+		<!--content-->
+		<div data-role="main" class="ui-content" data-theme="b">
+		<!--Video-->
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/HhesaQXLuRY" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<div class="ui-bar ui-bar-c" style="height:30px"><p class="desc">2008-2013</p></div>
+			</div>
+			<div class="ui-block-b">
+				<div class="ui-bar ui-bar-c" style="height:30px">
+					<span class="imdbRatingPlugin" data-user="ur66098371" data-title="tt0903747" data-style="p1"><a href="http://www.imdb.com/title/tt0903747/?ref_=plg_rt_1"><img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" Breaking Bad(2008) on IMDb" />
+					</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+				</div>
+			</div>
+		</div><!-- /grid-a -->
+
+		<div data-role="controlgroup" data-theme="a">
+		<p>A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.</p>
+		<h6>Starring:  Bryan Cranston, Aaron Paul, Anna Gunn </h6>
+		</div>
+
+		<!--share icons-->
+			<span class="socialShare"></span>
+		
+		</div><!-- /CONTENT -->
+
+	  <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#top5">My top 5</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div><!-- /panel-1 -->
+
+	<!--panel-2-->
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="c" id="search">
+		<ul data-role="listview" data-filter="true">
+                <li>
+                    <h2>American Vandal</h2>
+                    <p><a href="#american">Read more</a></p>
+                <li>
+                    <h2>Breaking Bad</h2>
+                    <p><a href="#breakingbad">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Daredevil</h2>
+                    <p><a href="#page2">Read more</a></p>
+                </li>
+                <li>
+                    <h2>IT Crowd</h2>
+                    <p><a href="#it">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Orange is the new black</h2>
+                    <p><a href="#orange">Read more</a></p>
+                </li>
+            </ul>
+		
+    </div> <!--/panel-2 -->
+	</div> <!-- / breaking bad page-->
+
+	<!--IT CROWD PAGE -->
+	<div data-role="page" id="it" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe">
+			<!--header-->
+		<div data-role="header">
+			<a href="#nav-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">One</a>
+			<h1><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+			<a href="#search" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search ui-btn-icon-notext">search</a>
+		</div><!-- /header-->
+
+		<!--content-->
+		<div data-role="main" class="ui-content" data-theme="b">
+		<!--Video-->
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/aQXpVhBCT7s" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<div class="ui-bar ui-bar-c" style="height:30px"><p class="desc">2006</p></div>
+			</div>
+			<div class="ui-block-b">
+				<div class="ui-bar ui-bar-c" style="height:30px">
+					<span class="imdbRatingPlugin" data-user="ur66098371" data-title="tt0487831" data-style="p1"><a href="http://www.imdb.com/title/tt0487831/?ref_=plg_rt_1"><img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" Los informáticos(2006) on IMDb" />
+					</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+				</div>
+			</div>
+		</div><!-- /grid-a -->
+
+		<div data-role="controlgroup" data-theme="a">
+		<p>The comedic adventures of a rag-tag group of technical support workers at a large corporation.</p>
+		<h6>Starring:  Chris O'Dowd, Richard Ayoade, Katherine Parkinson</h6>
+		</div>
+
+		<!--share icons-->
+			<span class="socialShare"></span>
+		
+	</div><!-- /CONTENT -->
+
+	  <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#top5">My top 5</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div><!-- /panel-1 -->
+
+	<!--panel-2-->
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="c" id="search">
+		<ul data-role="listview" data-filter="true">
+                <li>
+                    <h2>American Vandal</h2>
+                    <p><a href="#american">Read more</a></p>
+                <li>
+                    <h2>Breaking Bad</h2>
+                    <p><a href="#breakingbad">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Daredevil</h2>
+                    <p><a href="#page2">Read more</a></p>
+                </li>
+                <li>
+                    <h2>IT Crowd</h2>
+                    <p><a href="#it">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Orange is the new black</h2>
+                    <p><a href="#orange">Read more</a></p>
+                </li>
+            </ul>
+		
+    </div> <!--/panel-2 -->
+	</div> <!-- /IT PAGE -->
+
+	<!-- ORANGE IS NEW BLACK PAGE -->
+	<div data-role="page" id="orange" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe">
+			<!--header-->
+		<div data-role="header">
+			<a href="#nav-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">One</a>
+			<h1><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+			<a href="#search" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search ui-btn-icon-notext">search</a>
+		</div><!-- /header-->
+
+		<!--content-->
+		<div data-role="main" class="ui-content" data-theme="b">
+		<!--Video-->
+		<div class="video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/NzJATbm8U98" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<div class="ui-bar ui-bar-c" style="height:30px"><p class="desc">2017</p></div>
+			</div>
+			<div class="ui-block-b">
+				<div class="ui-bar ui-bar-c" style="height:30px">
+					<span class="imdbRatingPlugin" data-user="ur66098371" data-title="tt6688174" data-style="p1"><a href="http://www.imdb.com/title/tt6688174/?ref_=plg_rt_1"><img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" Orange Is the New Black(2017) on IMDb" />
+					</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+				</div>
+			</div>
+		</div><!-- /grid-a -->
+
+		<div data-role="controlgroup" data-theme="a">
+		<p>Convicted of a decade old crime of transporting drug money to an ex-girlfriend, normally law abiding Piper Chapman is sentenced to a year and a half behind bars to face the reality of how life changing prison can really be.</p>
+		<h6>Starring: Taylor Schilling, Danielle Brooks, Taryn Manning </h6>
+		</div>
+
+		<!--share icons-->
+			<span class="socialShare"></span>
+		
+		</div><!-- /CONTENT -->
+
+	  <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#top5">My top 5</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div><!-- /panel-1 -->
+
+	<!--panel-2-->
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="c" id="search">
+		<ul data-role="listview" data-filter="true">
+                <li>
+                    <h2>American Vandal</h2>
+                    <p><a href="#american">Read more</a></p>
+                <li>
+                    <h2>Breaking Bad</h2>
+                    <p><a href="#breakinbad">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Daredevil</h2>
+                    <p><a href="#page2">Read more</a></p>
+                </li>
+                <li>
+                    <h2>IT Crowd</h2>
+                    <p><a href="#it">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Orange is the new black</h2>
+                    <p><a href="#orange">Read more</a></p>
+                </li>
+            </ul>
+		
+    </div> <!--/panel-2 -->
+	</div> <!-- /ORANGE -->
+
+
+	<!-- SETTINGS PAGE -->
+	<div data-role="page" id="settings" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe">
+			<!--header-->
+		<div data-role="header">
+			<a href="#nav-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">One</a>
+			<h1><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+			<a href="#search" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search ui-btn-icon-notext">search</a>
+		</div><!-- /header-->
+
+		<!--content-->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+
+		<h3 class="ui-bar ui-bar-a ui-corner-all">Settings</h3>
+				<a href="#terms" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-arrow-r" style="text-align: left;">Terms of service</a>
+				<a href="#about" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-arrow-r" style="text-align: left;">About Flixme</a>
+			<button href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-arrow-r" style="text-align: left;">
+				<div id="paypal-button" class="ui-block-a">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="CZT4DQ55ENYW6">
+						<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+						<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+					</form>
+				</div>
+			</button>
+
+		<!--PayPal
+		<div id="paypal-button" class="paypal"></div>
+
+    	<script>
+        	paypal.Button.render({
+
+            env: 'production', // Or 'sandbox',
+
+            commit: true, // Show a 'Pay Now' button
+
+            payment: function() {
+                // Set up the payment here
+            },
+
+            onAuthorize: function(data, actions) {
+                // Execute the payment here
+           }
+
+        	}, '#paypal-button');
+    	</script> 
+    	/PayPal-->
+
+
+		</div><!-- /CONTENT -->
+
+	<div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#top5">My top 5</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div><!-- /panel-1 -->
+
+	<!--panel-2-->
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="c" id="search">
+		<ul data-role="listview" data-filter="true">
+                <li>
+                    <h2>American Vandal</h2>
+                    <p><a href="#american">Read more</a></p>
+                <li>
+                    <h2>Breaking Bad</h2>
+                    <p><a href="#breakingbad">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Daredevil</h2>
+                    <p><a href="#page2">Read more</a></p>
+                </li>
+                <li>
+                    <h2>IT Crowd</h2>
+                    <p><a href="#it">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Orange is the new black</h2>
+                    <p><a href="#orange">Read more</a></p>
+                </li>
+            </ul>
+		
+    </div> <!--/panel-2 -->
+	</div> <!-- /SETTINGS -->
+
+	<!-- TOP 5 PAGE -->
+	<div data-role="page" id="top5" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe">
+			<!--header-->
+		<div data-role="header">
+			<a href="#nav-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">One</a>
+			<h1><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+			<a href="#search" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search ui-btn-icon-notext">search</a>
+		</div><!-- /header-->
+
+		<!--content-->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+		<h4>My top 5 list</h4>
+		
+		<div data-role="controlgroup">
+			<div  class="ui-block-a" style="width:10%" >
+    			<div  style="margin: 10px 0 0 0;">
+       				<p>1.</p>
+    			</div>
+			</div>
+			<div  class="ui-block-b" style="width:90%"><input id="outgoingMsg" placeholder="Name of film, serie . . .">
+			</div>
+		
+			<div  class="ui-block-a" style="width:10%" >
+    			<div  style="margin: 10px 0 0 0;">
+       				<p>2.</p>
+    			</div>
+			</div>
+			<div  class="ui-block-b" style="width:90%"><input id="outgoingMsg" placeholder="Name of film, serie . . .">
+			</div>
+
+			<div  class="ui-block-a" style="width:10%" >
+    			<div  style="margin: 10px 0 0 0;">
+       				<p>3.</p>
+    			</div>
+			</div>
+			<div  class="ui-block-b" style="width:90%"><input id="outgoingMsg" placeholder="Name of film, serie . . .">
+			</div>
+
+				<div  class="ui-block-a" style="width:10%" >
+    			<div  style="margin: 10px 0 0 0;">
+       				<p>4.</p>
+    			</div>
+			</div>
+			<div  class="ui-block-b" style="width:90%"><input id="outgoingMsg" placeholder="Name of film, serie . . .">
+			</div>
+
+				<div  class="ui-block-a" style="width:10%" >
+    			<div  style="margin: 10px 0 0 0;">
+       				<p>5.</p>
+    			</div>
+			</div>
+			<div  class="ui-block-b" style="width:90%"><input id="outgoingMsg" placeholder="Name of film, serie . . .">
+			</div>
+
+		</div>
+
+		<div data-role="controlgroup" align="right">
+			<a href="index.html" data-role="button" data-inline="true">Reset</a>
+			<a href="index.html" data-role="button" data-inline="true">Save</a>
+		</div>
+
+		
+		<!--share icons-->
+			<span class="socialShare"></span>
+		
+		</div><!-- /CONTENT -->
+
+	  <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#top5">My top 5</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div><!-- /panel-1 -->
+
+	<!--panel-2-->
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="c" id="search">
+		<ul data-role="listview" data-filter="true">
+                <li>
+                    <h2>American Vandal</h2>
+                    <p><a href="#american">Read more</a></p>
+                <li>
+                    <h2>Breaking Bad</h2>
+                    <p><a href="#breakingbad">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Daredevil</h2>
+                    <p><a href="#page2">Read more</a></p>
+                </li>
+                <li>
+                    <h2>IT Crowd</h2>
+                    <p><a href="#it">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Orange is the new black</h2>
+                    <p><a href="#orange">Read more</a></p>
+                </li>
+            </ul>
+		
+    </div> <!--/panel-2 -->
+	</div> <!-- / TOP5 -->
+
+	<!-- LOGIN/LOGOUT PAGE -->
+	<div data-role="page" id="logout" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe">
+			<!--header-->
+		<div data-role="header">
+			<h1><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+		</div><!-- /header-->
+
+		<style type="text/css">
+		#background{ 
+		position: fixed; 
+		top: 0; 
+		left: 0; 
+		width: 100% !important; 
+		height: 100% !important; 
+		background: url(img/Flixme-logout-page.png) no-repeat center center fixed !important; 
+		-webkit-background-size: cover; 
+		-moz-background-size: cover; 
+		-o-background-size: cover; 
+		background-size: cover; 
+		z-index: -1; 
+		} 
+		.ui-page{ 
+		background:none; 
+		}
+		</style>    
+
+		<!--content-->
+		<div data-role="main" class="ui-content" data-theme="b">
+		<div id="background">
+		</div>
+		
+		<img src="img/icons8-Film Reel Filled-50.png" id="reel-position">
+
+		<div data-role="controlgroup" id="centered">
+			<a href="#page1" class="ui-btn ui-mini">Login via Facebook</a>
+			<a href="#page1" class="ui-btn ui-mini">Login with email</a>
+		</div>
+
+		</div><!-- /CONTENT -->
+
+	</div> <!-- / login PAGE -->
+
+	<!-- TERMS PAGE -->
+	<div data-role="page" id="terms" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe">
+			<!--header-->
+		<div data-role="header">
+			<a href="#nav-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">One</a>
+			<h1><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+			<a href="#search" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search ui-btn-icon-notext">search</a>
+		</div><!-- /header-->
+
+		<!--content-->
+		<div data-role="main" class="ui-content" data-theme="a">
+			<p>Terms of Service ("Terms")</p>
+			<p>Last updated: October 15, 2017</p>
+			<p>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the www.flixme.com website (the "Service") operated by flixme ("us", "we", or "our").</p>
+			<p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service. By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service for flixme.</p>
+		</div><!-- /CONTENT -->
+
+	  <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#top5">My top 5</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div><!-- /panel-1 -->
+
+	<!--panel-2-->
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="c" id="search">
+		<ul data-role="listview" data-filter="true">
+                <li>
+                    <h2>American Vandal</h2>
+                    <p><a href="#american">Read more</a></p>
+                <li>
+                    <h2>Breaking Bad</h2>
+                    <p><a href="#breakingbad">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Daredevil</h2>
+                    <p><a href="#page2">Read more</a></p>
+                </li>
+                <li>
+                    <h2>IT Crowd</h2>
+                    <p><a href="#it">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Orange is the new black</h2>
+                    <p><a href="#orange">Read more</a></p>
+                </li>
+            </ul>
+		
+    </div> <!--/panel-2 -->
+	</div> <!-- / TERMS -->
+
+	<!-- ABOUT PAGE -->
+	<div data-role="page" id="about" data-theme="b" class="jqm-demos ui-responsive-panel" data-title="flixMe">
+			<!--header-->
+		<div data-role="header">
+			<a href="#nav-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext">One</a>
+			<h1><img src="img/flixMe-logo.png" width="50%" height="50%"></h1>
+			<a href="#search" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-search ui-btn-icon-notext">search</a>
+		</div><!-- /header-->
+
+		<!--content-->
+		<div data-role="main" class="ui-content" data-theme="b">
+			<h4>About this app</h4>
+			<p>Fusce venenatis eu justo eget semper. Donec suscipit erat suscipit erat fringilla efficitur. Duis volutpat tempor lectus, eget viverra nibh cursus quis. Maecenas bibendum et massa at pretium. In vel nisl sed magna ornare aliquam. Phasellus hendrerit turpis id sem pretium lacinia. Nam in erat dolor. Nullam dolor urna, tempus at nunc at, euismod vestibulum massa. Praesent lobortis nibh non erat iaculis porttitor. Nulla facilisi. Nunc condimentum nisl libero, sit amet convallis justo placerat id. Maecenas volutpat feugiat dolor, non elementum mi facilisis et. Etiam fringilla augue lacus, nec vehicula mi elementum vitae. Etiam posuere justo at mauris finibus condimentum.</p>
+			<p>Fusce venenatis eu justo eget semper. Donec suscipit erat suscipit erat fringilla efficitur. Duis volutpat tempor lectus, eget viverra nibh cursus quis. Maecenas bibendum et massa at pretium. In vel nisl sed magna ornare aliquam. Phasellus hendrerit turpis id sem pretium lacinia. Nam in erat dolor. Nullam dolor urna, tempus at nunc at, euismod vestibulum massa. Praesent lobortis nibh non erat iaculis porttitor. Nulla facilisi. Nunc condimentum nisl libero, sit amet convallis justo placerat id. Maecenas volutpat feugiat dolor, non elementum mi facilisis et. Etiam fringilla augue lacus, nec vehicula mi elementum vitae. Etiam posuere justo at mauris finibus condimentum.</p>
+		</div><!-- /CONTENT -->
+
+	  <div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#page1">Home</a></li>
+                <li><a href="#top5">My top 5</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Logout</a></li>
+        </ul>
+    </div><!-- /panel-1 -->
+
+	<!--panel-2-->
+    <div data-role="panel" data-position="right" data-display="reveal" data-theme="c" id="search">
+		<ul data-role="listview" data-filter="true">
+                <li>
+                    <h2>American Vandal</h2>
+                    <p><a href="#american">Read more</a></p>
+                <li>
+                    <h2>Breaking Bad</h2>
+                    <p><a href="#breakingbad">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Daredevil</h2>
+                    <p><a href="#page2">Read more</a></p>
+                </li>
+                <li>
+                    <h2>IT Crowd</h2>
+                    <p><a href="#it">Read more</a></p>
+                </li>
+                <li>
+                    <h2>Orange is the new black</h2>
+                    <p><a href="#orange">Read more</a></p>
+                </li>
+            </ul>
+		
+    </div> <!--/panel-2 -->
+	</div> <!-- / ABOUT PAGE -->
+	
+</body>
+</html>

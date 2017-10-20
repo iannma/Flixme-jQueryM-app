@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Video en app</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+
+<!--CSS que le dice a todos iframe con la etiqueta video que sean RESPONSIVE-->
+><link rel="stylesheet" type="text/css" href="video.css">
+<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+<body>
+
+<div data-role="page">
+
+		<div data-role="header" data-theme="b"><h1>HEADER</h1></div>
+
+	<!--iFrame dentro del contenido (puede ser dentro de un DIV independiente acplicandole la Clase que hemos deficnido en las CSS)-->
+		<div data-role="main" data-theme="b" class="video">
+			<iframe width="375" height="315" src="https://www.youtube.com/embed/lIY6zFL95hE" frameborder="0" allowfullscreen></iframe>
+			
+		</div>
+	
+		<div data-role="footer" data-position="fixed" data-theme="b"><h4>Scroll infinite</h4></div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

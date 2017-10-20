@@ -1,0 +1,41 @@
+.ui-bar ui-bar-b{
+  padding: 0;
+  border:0;
+}
+p .desc {
+  padding-top: 0;
+}
+
+.paypal{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#colorchange{
+  color:white;
+}
+
+.socialShare{
+  align-content: right;
+}
+
+.myContainer  > .ui-field-contain
+    {
+        width:200px;
+    }
+
+.ui-page
+{
+   background: transparent url(img/Flixme-logout-page.png) no-repeat center center;
+}
+
+#centered{
+  margin-top: 8em;
+}
+
+#reel-position{
+  /*display: inline-block;*/
+  margin: auto;
+  padding-top: 15em;
+  display: block;
+}
